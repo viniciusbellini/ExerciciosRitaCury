@@ -1,8 +1,17 @@
-package cap8;
+package cap8.caso5;
+
+import cap8.caso5.geral.Endereco;
+import cap8.caso5.geral.Funcionario;
 
 public class Programador extends Funcionario{
 
 	private String linguagem;
+
+	public Programador(String nome, int idade, String logradouro, int numero, String bairro, String telefone,
+			double salario, String linguagem) {
+		super(nome, idade, new Endereco(logradouro,numero,bairro), telefone, salario);
+		setLinguagem(linguagem);
+	}
 
 	public String getLinguagem() {
 		return linguagem;
@@ -16,12 +25,6 @@ public class Programador extends Funcionario{
 		System.out.println("----------------------------------------");
 		super.mostrarDados();
 		System.out.println("Linguagem de programação: "+getLinguagem());
-	}
-
-	public void setDados(String nome, int idade, String endereco,
-			String telefone, double salario, String linguagem) {
-		super.setDados(nome, idade, endereco, telefone, salario);
-		setLinguagem(linguagem);
 	}
 
 	public void reajustarSalario(){

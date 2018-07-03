@@ -1,8 +1,14 @@
-package cap8;
+package cap8.caso4;
 
 public class Programador extends Funcionario{
 
 	private String linguagem;
+
+	public Programador(String nome, int idade, String endereco, String telefone,
+			double salario, String linguagem) {
+		super(nome, idade, endereco, telefone, salario);
+		setLinguagem(linguagem);
+	}
 
 	public String getLinguagem() {
 		return linguagem;
