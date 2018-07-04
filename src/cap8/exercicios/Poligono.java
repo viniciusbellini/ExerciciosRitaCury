@@ -14,6 +14,6 @@ public abstract class Poligono {
 	}
 	
 	public void imprimir() {
-		System.out.println("Area do Poligono: " + getArea());
+		System.out.println(this);
 	}
 }

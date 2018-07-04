@@ -21,6 +21,10 @@ public class Quadrado extends Poligono {
 	public void setLado(double lado) {
 		this.lado = lado;
 	}
-
+	
+	@Override
+	public String toString() {
+		return "Quadrado [lado="+getLado() + ", área: "+getArea()+"]";
+	}
 	
 }
