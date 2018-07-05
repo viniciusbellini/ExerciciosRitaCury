@@ -9,13 +9,11 @@ public class Redes extends Curso implements Vendavel{
 	}
 
 	@Override
-	public void getPreco(int modalidade) {
+	public double getPreco(int modalidade) {
 		
-		if (modalidade == 1){
-			System.out.println("R$ 620,00");
-		}else if (modalidade == 2){
-			System.out.println("R$ 1.190,00");
-		}
+		if (modalidade == 1)
+			return 620;
+		else return 1190;
 		
 	}
 

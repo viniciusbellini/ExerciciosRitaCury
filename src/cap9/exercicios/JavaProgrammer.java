@@ -29,7 +29,6 @@ public class JavaProgrammer extends Curso implements Vendavel{
 
 	@Override
 	public String toString() {
-		return "Nome do Curso: "+getNomeTreinamento() +
-				;
+		return "Nome do Curso: "+getNomeTreinamento();
 	}
 }
